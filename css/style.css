@@ -190,6 +190,8 @@ a {
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase; }
+    .text h1 span {
+      color: #26C7a9; }
   .text .button_first {
     margin: 25px auto;
     width: 230px;
@@ -209,65 +211,49 @@ a {
   width: 30%;
   margin: 40px 10px 40px 10px;
   border: 1px solid lightgrey;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: relative; }
   .block img {
     width: 100%; }
 
-.belt1 {
-  z-index: 2;
-  position: absolute;
-  height: 20px;
-  margin-left: 5px;
-  padding-top: 10px;
+.offer-belt {
+  z-index: 3;
   padding-right: 30px;
-  top: 570px;
+  font-size: 1em;
   font-weight: bold;
-  border-bottom: 5px solid #26C7a9; }
+  margin-left: 10px;
+  border-bottom: 5px solid #26C7a9;
+  position: absolute;
+  top: 70%;
+  width: 70%; }
 
-.belt2 {
+.opacity-belt {
   z-index: 2;
-  position: absolute;
-  height: 20px;
-  padding-top: 10px;
   padding-right: 30px;
-  margin-left: 5px;
-  top: 570px;
-  font-weight: bold;
-  border-bottom: 5px solid #26C7a9; }
+  position: absolute;
+  top: 66%;
+  height: 40px;
+  width: 100%;
+  background: white;
+  opacity: 0.5; }
 
 .inputs {
   padding: 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1em; }
   .inputs p {
     padding-top: 10px; }
   .inputs h3 {
     border-bottom: 5px solid #26C7a9;
-    width: 50%; }
-
-.opacity_belt {
-  height: 50px;
-  background: white;
-  width: 62%;
-  position: absolute;
-  top: 565px;
-  opacity: 0.4; }
-
-.blank_belt {
-  height: 30px;
-  background: white;
-  width: 100%;
-  top: 700px; }
+    width: 80%; }
 
 .cennik {
   background: #e6e6e6; }
 
 .header {
-  margin-top: 30px;
+  margin-top: 50px;
   border-bottom: 8px solid #26C7a9;
-  margin-bottom: 50px;
-  width: 250px;
-  position: absolute;
-  left: 170px; }
+  margin-bottom: 50px; }
 
 .circle1 {
   height: 20px;
