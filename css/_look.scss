@@ -134,6 +134,9 @@ a {
 .arrow {
   color: #26C7a9;
   cursor: pointer;
+  &:active{
+    font-weight: bold;
+  }
 }
 
 .left-arrow {
@@ -187,22 +190,28 @@ a {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;;
   }
 }
-
-
-
 
 .block {
   display: inline-block;
   width: 30%;
   margin: 40px 10px 40px 10px;
-  border: 1px solid lightgrey;
   vertical-align: middle;
   position: relative;
   img {
     width: 100%;
   }
+  &:hover{
+    span{
+      color: #26C7a9;
+    }
+  }
+}
+
+.block3 {
+  border: 1px solid lightgrey;
 }
 
 .offer-belt{
@@ -241,152 +250,138 @@ a {
   }
 }
 
-.cennik {
+.prices {
   background: #e6e6e6;
 }
 
 .header {
   margin-top: 50px;
   border-bottom: 8px solid #26C7a9;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-left: 6px;
 }
 
-.circle1 {
-  height: 20px;
-  width: 20px;
-  background: grey;
-  border-radius: 50%;
-  border: 10px solid white;
-  position: absolute;
-  top: 825px;
-  left: 300px;
-}
 
-.circle2 {
-  height: 20px;
-  width: 20px;
-  background: grey;
-  border-radius: 50%;
-  border: 10px solid #26C7a9;
-  position: absolute;
-  top: 825px;
-  left: 620px;
-}
 
-.circle3 {
-  height: 20px;
-  width: 20px;
-  background: grey;
-  border-radius: 50%;
-  border: 10px solid white;
-  position: absolute;
-  top: 825px;
-  left: 940px;
-}
-
-.bloki {
-  margin-top: 70px;
-}
-
-.block2 {
-  display: inline-block;
+.price-block {
   width: 30%;
   height: 435px;
-  margin: 40px 10px 40px 10px;
-  border: 3px solid lightgrey;
-  vertical-align: middle;
+  margin: 30px 10px 30px 10px;
+  border: 2px solid lightgrey;
   text-align: center;
-}
-
-.title {
-  font-size: 20px;
-  color: #26C7a9;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-weight: bold;
-}
-
-.cena {
-  color: #828282;
-  font-weight: bold;
-  font-size: 20px;
-  border: 1px solid #b8b8b8;
-  border-radius: 50%;
-  height: 110px;
-  width: 110px;
-  margin: auto;
+  display: inline-block;
   vertical-align: middle;
-  background: white;
+  position: relative;
+  .inner-circle{
+    background-color: #828282;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-left: -9.1px;
+  }
+  .outer-circle{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #828282;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -19px;
+  }
+  .title {
+    font-size: 20px;
+    color: #26C7a9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  .price {
+    color: #828282;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #b8b8b8;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    vertical-align: middle;
+    background: white;
+    span{
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+  .buy {
+    background: darkgrey;
+    margin-top:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .service {
+    background: lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .guarantee {
+    background: darkgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .advise {
+    background: lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .button_second {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    background: #26C7a9;
+    text-transform: uppercase;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+  }
+  &:hover {
+    background: #26C7a9;
+    .inner-circle {
+      background-color: white;
+    }
+    .outer-circle {
+      background-color: #26C7a9;
+      border: 1px solid #26C7a9;
+    }
+    .title {
+      color: white;
+    }
+    .buy {
+      background: lightgrey;
+    }
+    .service {
+      background: darkgrey;
+    }
+    .guarantee {
+      background: lightgrey;
+    }
+    .advise {
+      background: darkgrey;
+    }
+    .button_second {
+      background: white;
+      color: #26C7a9;
+    }
+  }
 }
 
-.big {
-  font-weight: bold;
-  font-size: 28px;
-}
 
-.zakup {
-  background: darkgrey;
-  margin-top:30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
-.serwis {
-  background: lightgrey;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.gwarancja {
-  background: darkgrey;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.porady {
-  background: lightgrey;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.button_second {
-  width: 120px;
-  height: 20px;
-  margin: auto;
-  background: #26C7a9;
-  text-transform: uppercase;
-  border-radius: 7px;
-  color: white;
-}
-
-.white {
-  background: white;
-  color: #26C7a9;
-}
-
-.blank {
-  height: 20px;
-}
-
-.standard {
-  background: #26C7a9;
-}
-
-.standard .title {
-  color: white;
-}
-
-.standard .cena {
-  color: #26C7a9;
-}
-
-.standard .zakup {
-  background: white;
-}
-
-.standard .gwarancja {
-  background: white;
-}
 
 .form {
   margin-top: 100px;
