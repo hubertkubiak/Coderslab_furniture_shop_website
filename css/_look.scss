@@ -34,6 +34,9 @@ body {
   font-family: ralewayregular, sans-serif;
 }
 
+
+// grid
+
 .grid-container {
   max-width : 960px;
   margin: 0 auto;
@@ -51,6 +54,9 @@ body {
   background: white;
   margin: 0 auto;
 }
+
+
+//navigation
 
 .navbar {
   height: 40px;
@@ -124,6 +130,9 @@ a {
   }
 }
 
+
+// header section
+
 .head {
   background: linear-gradient(to bottom, #fafafa 0%,#cdcfd4 100%);
   padding-top: 5%;
@@ -190,9 +199,16 @@ a {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px #888888;;
+    box-shadow: 3px 3px 3px #888888;
+    &:active{
+      background-color: white;
+      color: #26C7a9;
+    }
   }
 }
+
+
+// offer presentation
 
 .block {
   display: inline-block;
@@ -250,6 +266,9 @@ a {
   }
 }
 
+
+// prices options
+
 .prices {
   background: #e6e6e6;
 }
@@ -259,9 +278,8 @@ a {
   border-bottom: 8px solid #26C7a9;
   margin-bottom: 30px;
   margin-left: 6px;
+  clear: both;
 }
-
-
 
 .price-block {
   width: 30%;
@@ -348,6 +366,7 @@ a {
     border-radius: 7px;
     color: white;
     cursor: pointer;
+    box-shadow: 1px 1px 1px #888888;
   }
   &:hover {
     background: #26C7a9;
@@ -380,124 +399,116 @@ a {
   }
 }
 
-
-
+// contact section
 
 .form {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 100px;
+  .name {
+    height: 40px;
+    width: 100%;
+    font-size: 27px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+
+  .email {
+    height: 40px;
+    width: 100%;
+    font-size: 27px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+  .textarea {
+    height: 170px;
+    max-height: 200px;
+    width: 100%;
+    font-size: 27px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    opacity: 0.5;
+  }
+  .checkbox-part{
+    max-height: 150px;
+    text-align: center;
+    img{
+      margin-bottom: 5px;
+    }
+  }
+  .checkbox label {
+    display: inline-block;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"] + label:before {
+    content: "";
+    border: 1px solid #26C7a9;
+    background: url(../images/form_ok.jpg);
+    margin-right: 30px;
+    height: 41px;
+    width: 41px;
+    display: inline-block;
+  }
+  input[type="checkbox"]:checked + label:before {
+    content: "";
+    background: white;
+    border: 1px solid #26C7a9;
+  }
+  #submit {
+    height: 50px;
+    width: 270px;
+    font-size: 30px;
+    color: white;
+    background: #26C7a9;
+    border-radius: 7px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #888888;
+    &:active{
+      background-color: white;
+      color: #26C7a9;
+    }
+  }
+}
+
+
+// footer
+
+.footer{
   margin-top: 100px;
-  width: 550px;
-  height: auto;
-  position: absolute;
-  left:170px;
-  margin-bottom: 30px;
-}
-
-.name {
-  height: 40px;
-  width: 100%;
-  font-size: 27px;
-  padding: 5px;
-  padding-left: 10px;
-  border: 1px solid #26C7a9;
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-.email {
-  height: 40px;
-  width: 100%;
-  font-size: 27px;
-  padding: 5px;
-  padding-left: 10px;
-  border: 1px solid #26C7a9;
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-.textarea {
-  height: 150px;
-  max-height: 150px;
-  width: 100%;
-  font-size: 27px;
-  padding: 5px;
-  padding-left: 10px;
-  border: 1px solid #26C7a9;
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-.fotel {
-  position: absolute;
-  left: 650px;
-  top: -40px;
-}
-
-
-.checkbox {
-  position: absolute;
-  left: 600px;
-  top: 200px;
-}
-
-.checkbox label {
-  display: block;
-  padding-left: 45px;
-  position: absolute;
-  top: -30px;
-  width: 350px;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"] + label:before {
-  content: "";
-  border: 1px solid #26C7a9;
-  background: url(../images/form_ok.jpg);
-  margin-right: 30px;
-  height: 41px;
-  width: 41px;
-  display: inline-block;
-}
-input[type="checkbox"]:checked + label:before {
-  content: "";
-  background: white;
-  border: 1px solid #26C7a9;
-}
-
-#submit {
-  height: 50px;
-  width: 270px;
-  position: absolute;
-  left: 650px;
-  top: 250px;
-  font-size: 30px;
-  color: white;
-  background: #26C7a9;
-  border-radius: 7px;
-}
-
-.stopka {
-  float: left;
-  position: relative;
-  top: 480px;
-  margin-bottom: 30px;
-  opacity: 0.5;
-}
-
-.sitonchair {
-  float: right;
-  position: relative;
-  top: 480px;
-  margin-bottom: 30px;
-  opacity: 0.5;
-  word-spacing: 5px;
-}
-
-.footer img {
-  display: inline;
-  position: relative;
-  top: 470px;
-  left: 250px;
+  .copyright {
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    opacity: 0.5;
+  }
+  .sitonchair {
+    float: right;
+    position: relative;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    opacity: 0.5;
+    word-spacing: 3px;
+  }
+  img {
+    display: inline;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    left: 250px;
+    cursor: pointer;
+  }
+  strong{
+    color: #26C7a9;
+  }
 }

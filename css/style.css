@@ -207,7 +207,10 @@ a {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px #888888; }
+    box-shadow: 3px 3px 3px #888888; }
+    .text .button_first:active {
+      background-color: white;
+      color: #26C7a9; }
 
 .block {
   display: inline-block;
@@ -261,7 +264,8 @@ a {
   margin-top: 50px;
   border-bottom: 8px solid #26C7a9;
   margin-bottom: 30px;
-  margin-left: 6px; }
+  margin-left: 6px;
+  clear: both; }
 
 .price-block {
   width: 30%;
@@ -338,7 +342,8 @@ a {
     text-transform: uppercase;
     border-radius: 7px;
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #888888; }
   .price-block:hover {
     background: #26C7a9; }
     .price-block:hover .inner-circle {
@@ -361,108 +366,94 @@ a {
       color: #26C7a9; }
 
 .form {
-  margin-top: 100px;
-  width: 550px;
-  height: auto;
-  position: absolute;
-  left: 170px;
-  margin-bottom: 30px; }
-
-.name {
-  height: 40px;
-  width: 100%;
-  font-size: 27px;
-  padding: 5px;
-  padding-left: 10px;
-  border: 1px solid #26C7a9;
-  margin-bottom: 20px;
-  opacity: 0.5; }
-
-.email {
-  height: 40px;
-  width: 100%;
-  font-size: 27px;
-  padding: 5px;
-  padding-left: 10px;
-  border: 1px solid #26C7a9;
-  margin-bottom: 20px;
-  opacity: 0.5; }
-
-.textarea {
-  height: 150px;
-  max-height: 150px;
-  width: 100%;
-  font-size: 27px;
-  padding: 5px;
-  padding-left: 10px;
-  border: 1px solid #26C7a9;
-  margin-bottom: 20px;
-  opacity: 0.5; }
-
-.fotel {
-  position: absolute;
-  left: 650px;
-  top: -40px; }
-
-.checkbox {
-  position: absolute;
-  left: 600px;
-  top: 200px; }
-
-.checkbox label {
-  display: block;
-  padding-left: 45px;
-  position: absolute;
-  top: -30px;
-  width: 350px; }
-
-input[type="checkbox"] {
-  display: none; }
-
-input[type="checkbox"] + label:before {
-  content: "";
-  border: 1px solid #26C7a9;
-  background: url(../images/form_ok.jpg);
-  margin-right: 30px;
-  height: 41px;
-  width: 41px;
-  display: inline-block; }
-
-input[type="checkbox"]:checked + label:before {
-  content: "";
-  background: white;
-  border: 1px solid #26C7a9; }
-
-#submit {
-  height: 50px;
-  width: 270px;
-  position: absolute;
-  left: 650px;
-  top: 250px;
-  font-size: 30px;
-  color: white;
-  background: #26C7a9;
-  border-radius: 7px; }
-
-.stopka {
-  float: left;
+  margin-top: 20px;
   position: relative;
-  top: 480px;
-  margin-bottom: 30px;
-  opacity: 0.5; }
+  margin-bottom: 100px; }
+  .form .name {
+    height: 40px;
+    width: 100%;
+    font-size: 27px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    margin-bottom: 20px;
+    opacity: 0.5; }
+  .form .email {
+    height: 40px;
+    width: 100%;
+    font-size: 27px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    margin-bottom: 20px;
+    opacity: 0.5; }
+  .form .textarea {
+    height: 170px;
+    max-height: 200px;
+    width: 100%;
+    font-size: 27px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    opacity: 0.5; }
+  .form .checkbox-part {
+    max-height: 150px;
+    text-align: center; }
+    .form .checkbox-part img {
+      margin-bottom: 5px; }
+  .form .checkbox label {
+    display: inline-block; }
+  .form input[type="checkbox"] {
+    display: none; }
+  .form input[type="checkbox"] + label:before {
+    content: "";
+    border: 1px solid #26C7a9;
+    background: url(../images/form_ok.jpg);
+    margin-right: 30px;
+    height: 41px;
+    width: 41px;
+    display: inline-block; }
+  .form input[type="checkbox"]:checked + label:before {
+    content: "";
+    background: white;
+    border: 1px solid #26C7a9; }
+  .form #submit {
+    height: 50px;
+    width: 270px;
+    font-size: 30px;
+    color: white;
+    background: #26C7a9;
+    border-radius: 7px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #888888; }
+    .form #submit:active {
+      background-color: white;
+      color: #26C7a9; }
 
-.sitonchair {
-  float: right;
-  position: relative;
-  top: 480px;
-  margin-bottom: 30px;
-  opacity: 0.5;
-  word-spacing: 5px; }
-
-.footer img {
-  display: inline;
-  position: relative;
-  top: 470px;
-  left: 250px; }
+.footer {
+  margin-top: 100px; }
+  .footer .copyright {
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    opacity: 0.5; }
+  .footer .sitonchair {
+    float: right;
+    position: relative;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    opacity: 0.5;
+    word-spacing: 3px; }
+  .footer img {
+    display: inline;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    left: 250px;
+    cursor: pointer; }
+  .footer strong {
+    color: #26C7a9; }
 
 /*# sourceMappingURL=style.css.map */
