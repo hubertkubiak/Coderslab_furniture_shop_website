@@ -266,6 +266,8 @@ a {
   margin-bottom: 30px;
   margin-left: 6px;
   clear: both; }
+  .header span {
+    color: #26C7a9; }
 
 .price-block {
   width: 30%;
@@ -364,6 +366,9 @@ a {
     .price-block:hover .button_second {
       background: white;
       color: #26C7a9; }
+
+.customize {
+  background: #e6e6e6; }
 
 .form {
   margin-top: 20px;
