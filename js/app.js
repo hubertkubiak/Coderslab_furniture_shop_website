@@ -29,6 +29,17 @@ $(function(){
                 $(".drop3").css({'opacity':0});
             });
         }
+        function hamburger(){
+            var ham = $(".hamburger");
+            var menuhamburger = $(".menu-hamburger");
+            ham.on("click", function(event){
+                menuhamburger.toggleClass("unwind", 500);
+            });
+            var hamlinks = $(".ham a");
+            hamlinks.on("click", function(event){
+                menuhamburger.addClass("unwind", 500);
+            })
+        }
         function headSlider(){
             var visible = 0;
             var left = $(".left-arrow");
@@ -142,7 +153,8 @@ $(function(){
         return {
             dropdownMenu: dropdownMenu,
             headSlider: headSlider,
-            customPrice: customPrice
+            customPrice: customPrice,
+            hamburger: hamburger
         };
     };
 
@@ -150,6 +162,7 @@ $(function(){
     app.dropdownMenu();
     app.headSlider();
     app.customPrice();
+    app.hamburger();
 });
 
 

@@ -115,6 +115,9 @@ body {
   list-style: none;
   width: 20%;
   float: left; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .companyname {
+      width: 60%; } }
   .companyname span {
     color: #26C7a9; }
 
@@ -144,6 +147,30 @@ body {
     text-decoration: none; }
     .menu a:hover {
       color: #26C7a9; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .menu .first-level {
+      display: none; } }
+
+@media (min-width: 700px) and (max-width: 800px), (min-width: 800px) {
+  .hamburger img {
+    display: none; } }
+
+@media (min-width: 700px) and (max-width: 800px), (min-width: 800px) {
+  .menu-hamburger {
+    display: none; } }
+
+.menu-hamburger {
+  text-align: center;
+  font-size: 2.3em;
+  width: 100%;
+  padding-top: 40px;
+  background: black; }
+  .menu-hamburger a {
+    color: white; }
+
+.unwind {
+  height: 0;
+  font-size: 0; }
 
 a {
   color: black;
@@ -155,8 +182,11 @@ a {
 .head {
   background: linear-gradient(to bottom, #fafafa 0%, #cdcfd4 100%);
   padding-top: 5%;
-  padding-bottom: 5%;
-  height: 380px; }
+  padding-bottom: 5%; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .head {
+      text-align: center;
+      margin: 0 auto; } }
 
 .arrow {
   color: #26C7a9;
@@ -183,11 +213,17 @@ a {
   font-size: 8em;
   text-align: center;
   vertical-align: middle; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .left-arrow {
+      display: none; } }
 
 .right-arrow {
   font-size: 8em;
   text-align: center;
   vertical-align: middle; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .right-arrow {
+      display: none; } }
 
 .image ul {
   list-style: none; }
@@ -196,51 +232,79 @@ a {
   height: 290px;
   top: 100px;
   vertical-align: middle; }
+@media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+  .image {
+    display: none; } }
 
 .text {
   text-align: center;
   padding-top: 50px;
-  height: 290px;
+  max-height: 290px;
   vertical-align: middle; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .text {
+      width: 80%; } }
   .text h1 {
     padding-bottom: 20px;
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase; }
+    @media (max-width: 400px) {
+      .text h1 {
+        font-size: 1.2em; } }
     .text h1 span {
       color: #26C7a9; }
   .text .button_first {
     margin: 25px auto;
     width: 230px;
-    height: 30px;
+    min-height: 30px;
     background-color: #26C7a9;
     color: white;
     font-family: ralewayregular, sans-serif;
     text-align: center;
     padding-top: 5px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 3px 3px 3px #888888; }
+    @media (max-width: 400px) {
+      .text .button_first {
+        width: 180px; } }
     .text .button_first:active {
       background-color: white;
       color: #26C7a9; }
 
-.block {
-  display: inline-block;
-  width: 30%;
-  margin: 40px 10px 40px 10px;
-  vertical-align: middle;
-  position: relative; }
-  .block img {
-    width: 100%; }
-  .block:hover span {
-    color: #26C7a9; }
+.offer {
+  text-align: center; }
 
-.block3 {
-  border: 1px solid lightgrey; }
-
+@media (min-width: 700px) and (max-width: 800px), (min-width: 800px) {
+  .block {
+    display: inline-block;
+    width: 30%;
+    margin: 40px 10px 40px 10px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left; }
+    .block img {
+      width: 100%; }
+    .block:hover span {
+      color: #26C7a9; } }
+@media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+  .block1, .block2 {
+    display: inline-block;
+    width: 40%;
+    margin: 30px auto; }
+    .block1 img, .block2 img {
+      width: 100%;
+      margin: 0 auto; } }
+@media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+  .block3 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left; } }
 .offer-belt {
   z-index: 3;
   padding-right: 30px;
@@ -251,6 +315,12 @@ a {
   position: absolute;
   top: 70%;
   width: 70%; }
+  @media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+    .offer-belt {
+      font-size: 0.8em;
+      border: none;
+      position: relative;
+      margin: 2px auto; } }
 
 .opacity-belt {
   z-index: 2;
@@ -261,11 +331,17 @@ a {
   width: 100%;
   background: white;
   opacity: 0.5; }
+  @media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+    .opacity-belt {
+      display: none; } }
 
 .inputs {
   padding: 20px;
   box-sizing: border-box;
   font-size: 1em; }
+  @media (min-width: 700px) and (max-width: 800px) {
+    .inputs {
+      font-size: 0.8em; } }
   .inputs p {
     padding-top: 10px; }
   .inputs h3 {
@@ -274,6 +350,9 @@ a {
 
 .prices {
   background: #e6e6e6; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .prices {
+      text-align: center; } }
 
 .header {
   margin-top: 50px;
@@ -281,8 +360,14 @@ a {
   margin-bottom: 30px;
   margin-left: 6px;
   clear: both; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .header {
+      width: 100%; } }
   .header span {
     color: #26C7a9; }
+
+.price-blocks {
+  text-align: center; }
 
 .price-block {
   width: 30%;
@@ -293,6 +378,10 @@ a {
   display: inline-block;
   vertical-align: middle;
   position: relative; }
+  @media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+    .price-block {
+      width: 70%;
+      font-size: 0.8em; } }
   .price-block .inner-circle {
     background-color: #828282;
     width: 20px;
@@ -353,8 +442,9 @@ a {
     width: 120px;
     height: 20px;
     position: absolute;
+    margin: 0 auto;
+    left: calc(50% - 60px);
     bottom: 10px;
-    left: 30%;
     background: #26C7a9;
     text-transform: uppercase;
     border-radius: 7px;
@@ -386,10 +476,19 @@ a {
   background: #e6e6e6;
   margin-top: 0;
   position: relative; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .customize {
+      text-align: center; } }
 
 .choose-options {
   margin-top: 60px;
   display: inline-block; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .choose-options {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center; } }
   .choose-options select {
     height: 40px;
     width: 100%;
@@ -399,16 +498,26 @@ a {
     border: 1px solid #26C7a9;
     margin-bottom: 20px;
     opacity: 0.7; }
+    @media (max-width: 400px), (min-width: 400px) and (max-width: 700px), (min-width: 700px) and (max-width: 800px) {
+      .choose-options select {
+        font-size: 0.8em; } }
 
 .create {
   display: block;
   padding-top: 60px;
   border-bottom: 8px solid #26C7a9;
+  margin-bottom: 30px;
   margin-left: 6px;
   clear: both; }
+  @media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+    .create {
+      width: 100%; } }
   .create span {
     color: #26C7a9; }
 
+@media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+  .chair-picture {
+    display: none; } }
 .chair-picture img {
   position: relative;
   width: 100%;
@@ -416,12 +525,19 @@ a {
 
 .calc-table {
   display: inline-block; }
+  @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+    .calc-table {
+      text-align: center;
+      width: 90%; } }
   .calc-table table {
     opacity: 0.7;
     background: white;
     font-size: 26px;
     width: 100%;
     height: 220px; }
+    @media (min-width: 400px) and (max-width: 700px), (min-width: 700px) and (max-width: 800px) {
+      .calc-table table {
+        font-size: 1em; } }
     .calc-table table td {
       padding: 3px; }
     .calc-table table .last {
@@ -468,6 +584,10 @@ a {
     background: white;
     border: 1px solid #26C7a9; }
 
+@media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+  .input-types {
+    width: 100%; } }
+
 .to-contact {
   margin-top: 20px;
   position: relative;
@@ -501,6 +621,9 @@ a {
   .to-contact .checkbox-part {
     max-height: 150px;
     text-align: center; }
+    @media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+      .to-contact .checkbox-part {
+        width: 100%; } }
     .to-contact .checkbox-part img {
       margin-bottom: 5px; }
     .to-contact .checkbox-part .checkbox label {
@@ -532,6 +655,9 @@ a {
 
 .footer {
   margin-top: 100px; }
+  @media (max-width: 400px), (min-width: 400px) and (max-width: 700px) {
+    .footer {
+      width: 100%; } }
   .footer .copyright {
     float: left;
     position: relative;
@@ -545,14 +671,16 @@ a {
     vertical-align: middle;
     opacity: 0.5;
     word-spacing: 3px; }
-  .footer img {
-    display: inline;
-    position: relative;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    vertical-align: middle;
-    left: 250px;
-    cursor: pointer; }
+  .footer .social {
+    float: right;
+    margin-right: 20px; }
+    .footer .social img {
+      display: inline;
+      position: relative;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      vertical-align: middle;
+      cursor: pointer; }
   .footer strong {
     color: #26C7a9; }
 
