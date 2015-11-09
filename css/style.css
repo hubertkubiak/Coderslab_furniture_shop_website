@@ -30,62 +30,62 @@ body {
   margin: 0 auto; }
 
 .col-1 {
-  width: calc(8.33%*1 - 4px);
+  width: calc(8.33% * 1 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-2 {
-  width: calc(8.33%*2 - 4px);
+  width: calc(8.33% * 2 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-3 {
-  width: calc(8.33%*3 - 4px);
+  width: calc(8.33% * 3 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-4 {
-  width: calc(8.33%*4 - 4px);
+  width: calc(8.33% * 4 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-5 {
-  width: calc(8.33%*5 - 4px);
+  width: calc(8.33% * 5 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-6 {
-  width: calc(8.33%*6 - 4px);
+  width: calc(8.33% * 6 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-7 {
-  width: calc(8.33%*7 - 4px);
+  width: calc(8.33% * 7 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-8 {
-  width: calc(8.33%*8 - 4px);
+  width: calc(8.33% * 8 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-9 {
-  width: calc(8.33%*9 - 4px);
+  width: calc(8.33% * 9 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-10 {
-  width: calc(8.33%*10 - 4px);
+  width: calc(8.33% * 10 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-11 {
-  width: calc(8.33%*11 - 4px);
+  width: calc(8.33% * 11 - 4px);
   display: inline-block;
   margin: -2px; }
 
 .col-12 {
-  width: calc(8.33%*12 - 4px);
+  width: calc(8.33% * 12 - 4px);
   display: inline-block;
   margin: -2px; }
 
