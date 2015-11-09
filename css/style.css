@@ -160,9 +160,24 @@ a {
 
 .arrow {
   color: #26C7a9;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .arrow:active {
     font-weight: bold; }
+  .arrow:hover .back {
+    background: black;
+    position: absolute;
+    top: 58px;
+    left: 11px;
+    height: 55px;
+    width: 55px;
+    opacity: 0.1;
+    border-radius: 10px; }
 
 .left-arrow {
   font-size: 8em;
@@ -368,13 +383,96 @@ a {
       color: #26C7a9; }
 
 .customize {
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  margin-top: 0;
+  position: relative; }
 
-.form {
+.choose-options {
+  margin-top: 60px;
+  display: inline-block; }
+  .choose-options select {
+    height: 40px;
+    width: 100%;
+    font-size: 27px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #26C7a9;
+    margin-bottom: 20px;
+    opacity: 0.7; }
+
+.create {
+  display: block;
+  padding-top: 60px;
+  border-bottom: 8px solid #26C7a9;
+  margin-left: 6px;
+  clear: both; }
+  .create span {
+    color: #26C7a9; }
+
+.chair-picture img {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.calc-table {
+  display: inline-block; }
+  .calc-table table {
+    opacity: 0.7;
+    background: white;
+    font-size: 26px;
+    width: 100%;
+    height: 220px; }
+    .calc-table table td {
+      padding: 3px; }
+    .calc-table table .last {
+      border-top: 2px solid #26C7a9;
+      font-weight: bold;
+      color: #26C7a9;
+      border-top: 2px solid #26C7a9; }
+      .calc-table table .last .sum-head {
+        border-top: 2px solid #26C7a9; }
+  .calc-table #submit {
+    height: 40px;
+    width: 150px;
+    font-size: 24px;
+    color: white;
+    background: #26C7a9;
+    border-radius: 7px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #888888; }
+    .calc-table #submit:active {
+      background-color: white;
+      color: #26C7a9; }
+
+.choose-options {
+  font-size: 26px;
+  opacity: 0.7; }
+
+.choose-options {
+  position: relative;
+  padding-bottom: 70px; }
+  .choose-options .transport-type label {
+    display: inline-block; }
+  .choose-options input[type="checkbox"] {
+    display: none; }
+  .choose-options input[type="checkbox"] {
+    content: "";
+    border: 1px solid #26C7a9;
+    margin-right: 30px;
+    height: 41px;
+    width: 41px;
+    display: inline-block; }
+  .choose-options input[type="checkbox"]:checked {
+    content: "";
+    background: white;
+    border: 1px solid #26C7a9; }
+
+.to-contact {
   margin-top: 20px;
   position: relative;
   margin-bottom: 100px; }
-  .form .name {
+  .to-contact .name {
     height: 40px;
     width: 100%;
     font-size: 27px;
@@ -383,7 +481,7 @@ a {
     border: 1px solid #26C7a9;
     margin-bottom: 20px;
     opacity: 0.5; }
-  .form .email {
+  .to-contact .email {
     height: 40px;
     width: 100%;
     font-size: 27px;
@@ -392,7 +490,7 @@ a {
     border: 1px solid #26C7a9;
     margin-bottom: 20px;
     opacity: 0.5; }
-  .form .textarea {
+  .to-contact .textarea {
     height: 170px;
     max-height: 200px;
     width: 100%;
@@ -400,28 +498,25 @@ a {
     padding-left: 10px;
     border: 1px solid #26C7a9;
     opacity: 0.5; }
-  .form .checkbox-part {
+  .to-contact .checkbox-part {
     max-height: 150px;
     text-align: center; }
-    .form .checkbox-part img {
+    .to-contact .checkbox-part img {
       margin-bottom: 5px; }
-  .form .checkbox label {
-    display: inline-block; }
-  .form input[type="checkbox"] {
-    display: none; }
-  .form input[type="checkbox"] + label:before {
-    content: "";
-    border: 1px solid #26C7a9;
-    background: url(../images/form_ok.jpg);
-    margin-right: 30px;
-    height: 41px;
-    width: 41px;
-    display: inline-block; }
-  .form input[type="checkbox"]:checked + label:before {
-    content: "";
-    background: white;
-    border: 1px solid #26C7a9; }
-  .form #submit {
+    .to-contact .checkbox-part .checkbox label {
+      display: inline-block; }
+    .to-contact .checkbox-part input[type="checkbox"] {
+      content: "";
+      border: 1px solid #26C7a9;
+      margin-right: 30px;
+      height: 41px;
+      width: 41px;
+      display: inline-block; }
+    .to-contact .checkbox-part input[type="checkbox"]:checked {
+      content: "";
+      background: white;
+      border: 1px solid #26C7a9; }
+  .to-contact #submit {
     height: 50px;
     width: 270px;
     font-size: 30px;
@@ -431,7 +526,7 @@ a {
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 3px 3px 3px #888888; }
-    .form #submit:active {
+    .to-contact #submit:active {
       background-color: white;
       color: #26C7a9; }
 

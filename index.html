@@ -40,7 +40,7 @@
 
 <div class="head">
     <div class="grid-container">
-        <div class="left-arrow arrow col-1">&lsaquo;</div>
+        <div class="left-arrow arrow col-1">&lsaquo;<div class="back"></div></div>
         <div class="image col-5">
             <ul>
                 <li><img src="images/black_chair.png"></li>
@@ -48,7 +48,7 @@
                 <li><img src="images/red.png"></li>
             </ul>
         </div>
-        <div class="right-arrow arrow col-1">&rsaquo;</div>
+        <div class="right-arrow arrow col-1">&rsaquo;<div class="back"></div></div>
         <div class="text col-5">
             <h1>Sit <span>on</span> our <span>chair</span></h1>
 
@@ -156,33 +156,68 @@
 
 <div class="customize">
     <div class="grid-container">
-        <div class="header col-5">
+        <div class="create col-5">
             <h2>STWÓRZ <span>SWOJE</span> KRZESŁO!</h2>
         </div>
 
-        <form>
+        <form class="choose-options col-4">
             <select name="type" id="type">
-                <option value="0" selected>Wybierz rodzaj</option>
+                <option value=" " selected>Wybierz model</option>
                 <option value="2400">Clair</option>
-                <option value="2800">Margarita</option>
-                <option value="3200">Selena</option>
+                <option value="3000">Margo</option>
+                <option value="3500">Selena</option>
             </select>
             <select name="color" id="color">
                 <option value=" " selected>Wybierz kolor</option>
-                <option value="0">Czerwony</option>
-                <option value="0">Czarny</option>
-                <option value="0">Pomarańczowy</option>
+                <option value="200">Czerwony</option>
+                <option value="100">Czarny</option>
+                <option value="200">Pomarańczowy</option>
             </select>
             <select name="fabric" id="fabric">
+                <option value=" " selected>Wybierz materiał</option>
                 <option value="300">Tkanina</option>
                 <option value="600">Skóra</option>
             </select>
-            <input type="checkbox" id="transportOption" value="200">
-
-
-
+            <div class="transport-check">
+                <input type="checkbox" id="transport" value="200">
+                <label for="agree">TRANSPORT</label>
+            </div>
         </form>
 
+        <div class="chair-picture col-4">
+
+                <img id="clair" src="images/black_chair.png">
+                <img id="margo" src="images/orange.png">
+                <img id="selena" src="images/red.png">
+        </div>
+
+        <div class="calc-table col-4">
+            <table id="sum-table">
+                <tbody>
+                <tr class="ifchanged">
+                    <td id="chair-selected">MODEL</td>
+                    <td id="price-of-chair-selected">0</td>
+                </tr>
+                <tr class="ifchanged">
+                    <td id="color-selected">KOLOR</td>
+                    <td id="price-of-color-selected">0</td>
+                </tr>
+                <tr class="ifchanged">
+                    <td id="fabric-selected">TKANINA</td>
+                    <td id="price-of-fabric-selected">0</td>
+                </tr>
+                <tr class="ifchanged">
+                    <td id="transport-selected">Transport</td>
+                    <td id="price-of-transport">0</td>
+                </tr>
+                <tr class="last">
+                    <td class="sum-head">SUMA</td>
+                    <td class="sum">0</td>
+                </tr>
+                </tbody>
+            </table>
+            <input id="submit" name="submit" type="submit" value="ZAMAWIAM">
+        </div>
     </div>
 </div>
 
@@ -192,7 +227,7 @@
         <h2>KONTAKT</h2>
     </div>
     <div class="form grid-container">
-        <form>
+        <form class="to-contact">
             <div class="input-types col-6">
                 <input class="name" name="name" placeholder="Imię">
                 <input class="email" name="email" type="email" placeholder="email">

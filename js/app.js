@@ -57,15 +57,99 @@ $(function(){
                 image.eq(visible).show();
             });
         }
+        function customPrice(){
+            var type = $("#type");
+            var color = $("#color");
+            var fabric = $("#fabric");
+            var transport = $("#transport");
+            var visible = 0;
+            var imageChair = $(".chair-picture img");
+            var chairSelected = $("#chair-selected");
+            var priceOfChairSelected = $("#price-of-chair-selected");
+            var colorSelected = $("#color-selected");
+            var priceOfColorSelected = $("#price-of-color-selected");
+            var fabricSelected = $("#fabric-selected");
+            var priceOfFabricSelected = $("#price-of-fabric-selected");
+            var priceOfTransport = $("#price-of-transport");
+            var sumOfPrice = $(".sum");
+            var newSumOfPrice = 0;
+
+            imageChair.eq(0).show();
+            imageChair.eq(1).hide();
+            imageChair.eq(2).hide();
+
+            type.on("change", function(event) {
+                var chairValue = $(this).val();
+                var chairName = $(this).find("option:selected").text();
+                chairSelected.html(chairName);
+                priceOfChairSelected.html(chairValue);
+                if(chairName == "Clair"){
+
+                    imageChair.eq(0).hide();
+                    imageChair.eq(1).show();
+                    imageChair.eq(2).hide();
+                }
+                if(chairName == "Margo"){
+
+                    imageChair.eq(0).show();
+                    imageChair.eq(1).hide();
+                    imageChair.eq(2).hide();
+                }
+                if(chairName == "Selena"){
+
+                    imageChair.eq(0).hide();
+                    imageChair.eq(1).hide();
+                    imageChair.eq(2).show();
+                }
+                newSumOfPrice =+chairValue;
+                sumOfPrice.html(newSumOfPrice)
+                return newSumOfPrice;
+            });
+
+            color.on("change", function(event) {
+                var colorValue = $(this).val();
+                var colorName = $(this).find("option:selected").text();
+                colorSelected.html(colorName);
+                priceOfColorSelected.html(colorValue);
+                newSumOfPrice =+colorValue;
+                sumOfPrice.html(newSumOfPrice);
+                return newSumOfPrice;
+            });
+
+            fabric.on("change", function(event) {
+                var fabricValue = $(this).val();
+                var fabricName = $(this).find("option:selected").text();
+                fabricSelected.html(fabricName);
+                priceOfFabricSelected.html(fabricValue);
+                newSumOfPrice =+fabricValue;
+                sumOfPrice.html(newSumOfPrice);
+                return newSumOfPrice;
+            });
+
+            transport.change(function() {
+                var transportValue = transport.val();
+                if(this.checked) {
+                    priceOfTransport.html(transportValue);
+                }
+                else{
+                    priceOfTransport.html(0);
+                }
+                newSumOfPrice =+transportValue;
+                sumOfPrice.html(newSumOfPrice);
+                return newSumOfPrice;
+            });
+        }
         return {
             dropdownMenu: dropdownMenu,
-            headSlider: headSlider
+            headSlider: headSlider,
+            customPrice: customPrice
         };
     };
 
     var app = new Application();
     app.dropdownMenu();
     app.headSlider();
+    app.customPrice();
 });
 
 
