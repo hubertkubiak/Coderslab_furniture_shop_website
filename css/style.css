@@ -262,7 +262,7 @@ a {
     color: white;
     font-family: ralewayregular, sans-serif;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
@@ -362,7 +362,8 @@ a {
   clear: both; }
   @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
     .header {
-      width: 100%; } }
+      width: 100%;
+      text-align: center; } }
   .header span {
     color: #26C7a9; }
 
@@ -451,6 +452,9 @@ a {
     color: white;
     cursor: pointer;
     box-shadow: 1px 1px 1px #888888; }
+    @media (min-width: 400px) and (max-width: 700px), (max-width: 400px) {
+      .price-block .button_second {
+        padding-top: 4px; } }
   .price-block:hover {
     background: #26C7a9; }
     .price-block:hover .inner-circle {
@@ -547,7 +551,7 @@ a {
       border-top: 2px solid #26C7a9; }
       .calc-table table .last .sum-head {
         border-top: 2px solid #26C7a9; }
-  .calc-table #submit {
+  .calc-table .submit {
     height: 40px;
     width: 150px;
     font-size: 24px;
@@ -557,7 +561,7 @@ a {
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 3px 3px 3px #888888; }
-    .calc-table #submit:active {
+    .calc-table .submit:active {
       background-color: white;
       color: #26C7a9; }
 
@@ -639,7 +643,7 @@ a {
       content: "";
       background: white;
       border: 1px solid #26C7a9; }
-  .to-contact #submit {
+  .to-contact .submit {
     height: 50px;
     width: 270px;
     font-size: 30px;
@@ -649,7 +653,7 @@ a {
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 3px 3px 3px #888888; }
-    .to-contact #submit:active {
+    .to-contact .submit:active {
       background-color: white;
       color: #26C7a9; }
 

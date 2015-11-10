@@ -270,7 +270,7 @@ a {
     color: white;
     font-family: ralewayregular, sans-serif;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
@@ -400,6 +400,7 @@ a {
   clear: both;
   @media #{$tabletSmall, $smartphone} {
     width: 100%;
+    text-align: center;
   }
   span {
     color: #26C7a9;
@@ -500,6 +501,9 @@ a {
     color: white;
     cursor: pointer;
     box-shadow: 1px 1px 1px #888888;
+    @media #{$tabletSmall, $smartphone}{
+      padding-top: 4px;
+    }
   }
   &:hover {
     background: #26C7a9;
@@ -621,7 +625,7 @@ a {
       }
     }
   }
-  #submit {
+  .submit {
     height: 40px;
     width: 150px;
     font-size: 24px;
@@ -737,7 +741,7 @@ a {
       border: 1px solid #26C7a9;
     }
   }
-  #submit {
+  .submit {
     height: 50px;
     width: 270px;
     font-size: 30px;
