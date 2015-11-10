@@ -73,7 +73,6 @@ $(function(){
             var color = $("#color");
             var fabric = $("#fabric");
             var transport = $("#transport");
-            var visible = 0;
             var imageChair = $(".chair-picture img");
             var chairSelected = $("#chair-selected");
             var priceOfChairSelected = $("#price-of-chair-selected");
@@ -84,6 +83,10 @@ $(function(){
             var priceOfTransport = $("#price-of-transport");
             var sumOfPrice = $(".sum");
             var newSumOfPrice = 0;
+            var oldSumOfChair = 0;
+            var oldSumOfColor = 0;
+            var oldSumOfFabric = 0;
+            var oldSumOfTransport = 0;
 
             imageChair.eq(0).show();
             imageChair.eq(1).hide();
@@ -112,9 +115,11 @@ $(function(){
                     imageChair.eq(1).hide();
                     imageChair.eq(2).show();
                 }
-                newSumOfPrice =+chairValue;
-                sumOfPrice.html(newSumOfPrice)
-                return newSumOfPrice;
+                    newSumOfPrice -= oldSumOfChair;
+                    newSumOfPrice += parseInt(chairValue, 10);
+                    oldSumOfChair = parseInt(chairValue, 10);
+                    sumOfPrice.html(newSumOfPrice);
+                    return newSumOfPrice;
             });
 
             color.on("change", function(event) {
@@ -122,7 +127,9 @@ $(function(){
                 var colorName = $(this).find("option:selected").text();
                 colorSelected.html(colorName);
                 priceOfColorSelected.html(colorValue);
-                newSumOfPrice =+colorValue;
+                newSumOfPrice -= oldSumOfColor;
+                newSumOfPrice += parseInt(colorValue,10);
+                oldSumOfColor = parseInt(colorValue,10);
                 sumOfPrice.html(newSumOfPrice);
                 return newSumOfPrice;
             });
@@ -132,7 +139,9 @@ $(function(){
                 var fabricName = $(this).find("option:selected").text();
                 fabricSelected.html(fabricName);
                 priceOfFabricSelected.html(fabricValue);
-                newSumOfPrice =+fabricValue;
+                newSumOfPrice -= oldSumOfFabric;
+                newSumOfPrice += parseInt(fabricValue,10);
+                oldSumOfFabric = parseInt(fabricValue,10)
                 sumOfPrice.html(newSumOfPrice);
                 return newSumOfPrice;
             });
@@ -141,12 +150,14 @@ $(function(){
                 var transportValue = transport.val();
                 if(this.checked) {
                     priceOfTransport.html(transportValue);
+                    newSumOfPrice += parseInt(transportValue, 10);
+                    sumOfPrice.html(newSumOfPrice);
                 }
                 else{
                     priceOfTransport.html(0);
+                    newSumOfPrice -= parseInt(transportValue, 10);
+                    sumOfPrice.html(newSumOfPrice)
                 }
-                newSumOfPrice =+transportValue;
-                sumOfPrice.html(newSumOfPrice);
                 return newSumOfPrice;
             });
         }
