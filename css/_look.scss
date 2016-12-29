@@ -36,13 +36,23 @@ body {
 }
 
 // grid
-
 .grid-container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-@each $columns in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+@each $columns in 1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12 {
   .col-#{$columns} {
     width: calc(8.33% * #{$columns} - 4px);
     display: inline-block;
@@ -56,7 +66,6 @@ body {
 }
 
 //navigation
-
 .navbar {
   height: 40px;
   background: black;
@@ -81,7 +90,7 @@ body {
   list-style: none;
   width: 20%;
   float: left;
-  @media #{$tabletSmall, $smartphone}{
+  @media #{$tabletSmall, $smartphone} {
     width: 60%;
   }
   span {
@@ -128,35 +137,34 @@ body {
   }
 }
 
-.hamburger{
-  img{
+.hamburger {
+  img {
     @media #{$tabletBig, $desktop} {
       display: none;
     }
   }
 }
 
-.menu-hamburger{
-    @media #{$tabletBig, $desktop} {
-      display: none;
-    }
+.menu-hamburger {
+  @media #{$tabletBig, $desktop} {
+    display: none;
+  }
 }
 
-.menu-hamburger{
+.menu-hamburger {
   text-align: center;
   font-size: 2.3em;
   width: 100%;
   padding-top: 40px;
   background: black;
-  a{
+  a {
     color: white;
   }
-
 }
 
 .unwind {
-  height:0;
-  font-size:0;
+  height: 0;
+  font-size: 0;
 }
 
 a {
@@ -169,7 +177,6 @@ a {
 }
 
 // header section
-
 .head {
   background: linear-gradient(to bottom, #fafafa 0%, #cdcfd4 100%);
   padding-top: 5%;
@@ -252,7 +259,7 @@ a {
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
-    @media #{$smartphone}{
+    @media #{$smartphone} {
       font-size: 1.2em;
     }
     span {
@@ -262,13 +269,14 @@ a {
   .button_first {
     margin: 25px auto;
     width: 230px;
-    @media #{$smartphone}{
+    @media #{$smartphone} {
       width: 180px;
     }
     min-height: 30px;
     background-color: #26C7a9;
     color: white;
-    font-family: ralewayregular, sans-serif;
+    font-family: ralewayregular,
+    sans-serif;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -285,12 +293,11 @@ a {
 }
 
 // offer presentation
-
-.offer{
+.offer {
   text-align: center;
 }
 
-@media #{$tabletBig, $desktop}{
+@media #{$tabletBig, $desktop} {
   .block {
     display: inline-block;
     width: 30%;
@@ -309,9 +316,9 @@ a {
   }
 }
 
-
 @media #{$tabletSmall, $smartphone} {
-.block1, .block2 {
+  .block1,
+  .block2 {
     display: inline-block;
     width: 40%;
     margin: 30px auto;
@@ -322,11 +329,8 @@ a {
   }
 }
 
-
-
-
-@media #{$tabletSmall, $smartphone}{
-  .block3{
+@media #{$tabletSmall, $smartphone} {
+  .block3 {
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -351,7 +355,6 @@ a {
     margin: 2px auto;
   }
 }
-
 
 .opacity-belt {
   z-index: 2;
@@ -384,7 +387,6 @@ a {
 }
 
 // prices options
-
 .prices {
   background: #e6e6e6;
   @media #{$tabletSmall, $smartphone} {
@@ -410,6 +412,7 @@ a {
 .price-blocks {
   text-align: center;
 }
+
 .price-block {
   width: 30%;
   height: 435px;
@@ -419,7 +422,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  @media #{$smartphone, $tabletSmall}{
+  @media #{$smartphone, $tabletSmall} {
     width: 70%;
     font-size: 0.8em;
   }
@@ -501,7 +504,7 @@ a {
     color: white;
     cursor: pointer;
     box-shadow: 1px 1px 1px #888888;
-    @media #{$tabletSmall, $smartphone}{
+    @media #{$tabletSmall, $smartphone} {
       padding-top: 4px;
     }
   }
@@ -537,7 +540,6 @@ a {
 }
 
 // customize section
-
 .customize {
   background: #e6e6e6;
   margin-top: 0;
@@ -578,7 +580,7 @@ a {
   margin-bottom: 30px;
   margin-left: 6px;
   clear: both;
-  @media #{$smartphone, $tabletSmall}{
+  @media #{$smartphone, $tabletSmall} {
     width: 100%;
   }
   span {
@@ -672,9 +674,8 @@ a {
 }
 
 // contact section
-
-.input-types{
-  @media #{$smartphone, $tabletSmall}{
+.input-types {
+  @media #{$smartphone, $tabletSmall} {
     width: 100%;
   }
 }
@@ -715,7 +716,7 @@ a {
   .checkbox-part {
     max-height: 150px;
     text-align: center;
-    @media #{$smartphone, $tabletSmall}{
+    @media #{$smartphone, $tabletSmall} {
       width: 100%;
     }
     img {
@@ -724,9 +725,7 @@ a {
     .checkbox label {
       display: inline-block;
     }
-    input[type="checkbox"] {
-
-    }
+    input[type="checkbox"] {}
     input[type="checkbox"] {
       content: "";
       border: 1px solid #26C7a9;
@@ -759,10 +758,9 @@ a {
 }
 
 // footer
-
 .footer {
   margin-top: 100px;
-  @media #{$smartphone, $tabletSmall}{
+  @media #{$smartphone, $tabletSmall} {
     width: 100%;
   }
   .copyright {
@@ -780,17 +778,17 @@ a {
     opacity: 0.5;
     word-spacing: 3px;
   }
-  .social{
+  .social {
     float: right;
     margin-right: 20px;
-  img {
-    display: inline;
-    position: relative;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    vertical-align: middle;
-    cursor: pointer;
-  }
+    img {
+      display: inline;
+      position: relative;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
   }
   strong {
     color: #26C7a9;
